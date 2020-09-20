@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Shopping Cart </title>
+        <link rel="stylesheet" href="shop.css">
+        <link rel="shortcut icon" href="icon11.png" type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <video id="vibig" autoplay loop muted>
+            <source src="ved.mp4">
+        </video>
+        <header class="init">
+            <img id="icon" src="icon11.png" alt="icon" style="color: aquamarine;">
+            <h1 id="gen" style="color: aquamarine;"></h1>
+                <ul id="menu">
+                <li onclick="gencal(this)"><a href="#" style="color: aquamarine;">See general cost</a></li>   
+                <li><a href="#" style="color: aquamarine;">Shipping</a></li>
+                <li><a href="#" style="color: aquamarine;">Buy</a></li>
+                </ul>
+        </header>
+        <section id="bigg">
+        <section id="big2">
+        <section class="first">
+            <div id="fir1">
+                <h2 id="cost1" style="color: aquamarine;">Cost:106$</h2>
+                <div class="container"> 
+                <img src="im1.jpg" alt="image" class="image">
+                   <div class="middle">
+                     <img id="col" src="heart.png" alt="like" onclick="change1()">
+                   </div>
+                </div>
+                <p id="dita1" style="color: aquamarine; font-size: 20px;"></p>
+                <p id="dita11" style="color: aquamarine; font-size: 20px;"></p>
+                <p onmousemove="this.innerHTML = 'For you'" onmouseout="this.innerHTML = 'Best choice'" style="font-size: 30px; font-family: Arial, Helvetica, sans-serif; color: aquamarine;">Best choice</p>
+                <h1 id="h11" style="color: aquamarine;"></h1>
+                <div class="btn">
+                    <button id="b1+" type="button">+</button>
+                    <button id="b1-" type="button">-</button>
+                    <button id="del1" type="button" onclick="rem1()">Delete</button>
+                    <button id="dit1" type="button" onclick="detail1()"> More details</button>
+                </div>
+            </div>
+            <div id="fir2">
+                <h2 id="cost2" style="color: aquamarine;">Cost:93$</h2>
+                <div class="container">
+                <img src="im2.jpg" alt="image" class="image">
+                  <div class="middle">
+                    <img id="col" src="heart.png" alt="like" onclick="change2()">
+                  </div>
+                </div>
+                <p id="dita2" style="color: aquamarine;font-size: 20px;"></p>
+                <p id="dita22" style="color: aquamarine;font-size: 20px;"></p>
+                <p onmousemove="this.innerHTML = 'For you'" onmouseout="this.innerHTML = 'Best choice'" style="font-size: 30px; font-family: Arial, Helvetica, sans-serif; color: aquamarine;">Best choice</p>
+                <h1 id="h22" style="color: aquamarine;"></h1>
+                <div class="btn">
+                    <button id="b2+" type="button">+</button>
+                    <button id="b2-" type="button">-</button>
+                    <button id="del2" onclick="rem2()">Delete</button>
+                    <button id="dit2" type="button" onclick="detail2()">More details</button>
+                </div>
+            </div>
+        </section>
+        <section class="second">
+            <div id="secon1">
+                <h2 id="cost3" style="color: aquamarine;">Cost:80$</h2>
+                <div class="container">
+                    <img src="im3.jpg" alt="image" class="image">
+                      <div class="middle">
+                        <img id="col" src="heart.png" alt="like" onclick="change3()">
+                      </div>
+                    </div>
+                    <p id="dita3" style="color: aquamarine;font-size: 20px;"></p>
+                    <p id="dita33" style="color: aquamarine;font-size: 20px;"></p>
+                <p onmousemove="this.innerHTML = 'For you'" onmouseout="this.innerHTML = 'Best choice'" style="font-size: 30px; font-family: Arial, Helvetica, sans-serif;color: aquamarine;">Best choice</p>
+                <h1 id="h33" style="color: aquamarine;"></h1>
+                <div class="btn">
+                    <button id="b3+" type="button">+</button>
+                    <button id="b3-" type="button">-</button>
+                    <button id="del3" onclick="rem3()">Delete</button>
+                    <button id="dit3" type="button" onclick="detail3()"> More details</button>
+                </div>
+            </div>
+            <div id="secon2">
+                <h2 id="cost4" style="color: aquamarine;">Cost:72$</h2>
+                <div class="container">
+                    <img src="im4.jpg" alt="image" class="image">
+                      <div class="middle">
+                        <img id="col" src="heart.png" alt="like" onclick="change4()">
+                      </div>
+                    </div>
+                    <p id="dita4" style="color: aquamarine;font-size: 20px;"></p>
+                    <p id="dita44" style="color: aquamarine;font-size: 20px;"></p>
+                <p onmousemove="this.innerHTML = 'For you'" onmouseout="this.innerHTML = 'Best choice'" style="font-size: 30px; font-family: Arial, Helvetica, sans-serif;color: aquamarine;">Best choice</p>
+                <h1 id="h44" style="color: aquamarine;"></h1>
+                <div class="btn">
+                    <button id="b4+" type="button">+</button>
+                    <button id="b4-" type="button">-</button>
+                    <button id="del4" onclick="rem4()">Delete</button>
+                    <button id="dit4" type="button" onclick="detail4()">More details</button>
+                </div>
+            </div>
+        </section>
+        </section>
+        <section id="big1">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="Street-Style-Outfit-Ideas-1.jpg" style="width:100%">
+                  <div class="text">Best service</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="Suits-Style-Guide-For-Men.jpg" style="width:100%">
+                  <div class="text">Best choice</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="Suits-Style-Guide.jpg" style="width:100%">
+                  <div class="text">With our market</div>
+                </div>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                </div>
+          </section>
+        </section>
+        <footer>
+            <p style="color: aquamarine;">All rights reserved 2020</p>
+            <div id="leav">
+            <label for="lname" style="color: aquamarine;">Leave a comment:</label>
+            <input type="text" id="lname" name="lname">
+        </div>
+        </footer>
+        <script>
+            var a=document.getElementById("b1+");
+            var b=document.getElementById("b1-");
+            var c=document.getElementById("b2+");
+            var d=document.getElementById("b2-");
+            var e=document.getElementById("b3+");
+            var f=document.getElementById("b3-");
+            var g=document.getElementById("b4+");
+            var h=document.getElementById("b4-");
+
+            a.addEventListener("click",add1);
+            var cost1=106;
+            var cnt1=0;
+            var cnt11="";
+            var cst1="";
+            var sr11="Quantity:"
+            function add1(){
+                cnt1+=1;
+                cnt111=cnt1.toString();
+                cnt11=sr11+cnt111;
+                document.getElementById("h11").innerHTML = cnt11;
+                cot1=cost1*cnt1;
+                cst1=cot1.toString();
+                document.getElementById("cost1").innerHTML = "Cost:"+cst1+"$";
+            }
+            b.addEventListener("click",mins1);
+            function mins1(){
+                if(cnt1>1){ 
+                cnt1-=1; 
+                cnt111=cnt1.toString();
+                cnt11=sr11+cnt111;
+                document.getElementById("h11").innerHTML = cnt11;
+                cot1=cost1*cnt1;
+                cst1=cot1.toString();
+                document.getElementById("cost1").innerHTML = "Cost:"+cst1+"$";
+                if(cnt1==0){
+                    document.getElementById("h11").innerHTML = "";
+            }
+            } 
+            }    
+
+            c.addEventListener("click",add2);
+            var cost2=93;
+            var cst2="";
+            var cnt2=0;
+            var cnt22="";
+            var sr22="Quantity:"
+            function add2(){
+                cnt2+=1;
+                cnt222=cnt2.toString();
+                cnt22=sr22+cnt222;
+                document.getElementById("h22").innerHTML = cnt22;
+                cot2=cost2*cnt2;
+                cst2=cot2.toString();
+                document.getElementById("cost2").innerHTML = "Cost:"+cst2+"$";
+            } 
+            d.addEventListener("click",mins2);
+            function mins2(){
+                if(cnt2>1){
+                cnt2-=1; 
+                cnt222=cnt2.toString();
+                cnt22=sr22+cnt222;
+                document.getElementById("h22").innerHTML = cnt22;
+                cot2=cost2*cnt2;
+                cst2=cot2.toString();
+                document.getElementById("cost2").innerHTML = "Cost:"+cst2+"$";
+                if(cnt2==0){
+                    document.getElementById("h22").innerHTML = "";
+            }
+            }  
+            }   
+
+            e.addEventListener("click",add3);
+            var cost3=82;
+            var cst3="";
+            var cnt3=0;
+            var cnt33="";
+            var sr33="Quantity:"
+            function add3(){
+                cnt3+=1;
+                cnt333=cnt3.toString();
+                cnt33=sr33+cnt333;
+                document.getElementById("h33").innerHTML = cnt33;
+                cot3=cost3*cnt3;
+                cst3=cot3.toString();
+                document.getElementById("cost3").innerHTML = "Cost:"+cst3+"$";
+            } 
+            f.addEventListener("click",mins3);
+            function mins3(){
+                if(cnt3>1){
+                cnt3-=1; 
+                cnt333=cnt3.toString();
+                cnt33=sr33+cnt333;
+                document.getElementById("h33").innerHTML = cnt33;
+                cot3=cost3*cnt3;
+                cst3=cot3.toString();
+                document.getElementById("cost3").innerHTML = "Cost:"+cst3+"$";
+                if(cnt3==0){
+                    document.getElementById("h33").innerHTML = "";
+            }
+            }  
+            }  
+            
+            
+            g.addEventListener("click",add4);
+            var cost4=76;
+            var cst4="";
+            var cnt4=0;
+            var cnt44="";
+            var sr44="Quantity:"
+            function add4(){
+                cnt4+=1;
+                cnt444=cnt4.toString();
+                cnt44=sr44+cnt444;
+                document.getElementById("h44").innerHTML = cnt44;
+                cot4=cost4*cnt4;
+                cst4=cot4.toString();
+                document.getElementById("cost4").innerHTML = "Cost:"+cst4+"$";
+            } 
+            h.addEventListener("click",mins4);
+            function mins4(){
+                if(cnt4>1){
+                cnt4-=1; 
+                cnt444=cnt4.toString();
+                cnt44=sr44+cnt444;
+                document.getElementById("h44").innerHTML = cnt44;
+                cot4=cost4*cnt4;
+                cst4=cot4.toString();
+                document.getElementById("cost4").innerHTML = "Cost:"+cst4+"$";
+                if(cnt4==0){
+                    document.getElementById("h44").innerHTML = "";
+            }
+            }  
+            }  
+            var gencostt=""; 
+            function gencal(x){
+                gencot=cot1+cot2+cot3+cot4;
+                gencostt=gencot.toString();
+                document.getElementById("gen").innerHTML = "Your general cost is:"+gencostt+"$";
+            }
+            function change1(){
+               document.getElementById("fir1").style.borderColor="aqua";
+            }
+            function change2(){
+                document.getElementById("fir2").style.borderColor="aqua";
+            }
+            function change3(){
+                document.getElementById("secon1").style.borderColor="aqua";
+            }
+            function change4(){
+                document.getElementById("secon2").style.borderColor="aqua";
+            }
+            var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 1960);
+}
+      function rem1(){
+          var myobj1=document.getElementById("fir1");
+          myobj1.remove();
+      }
+      function rem2(){
+          var myobj2=document.getElementById("fir2");
+          myobj2.remove();
+      }
+      function rem3(){
+          var myobj3=document.getElementById("secon1");
+          myobj3.remove();
+      }
+      function rem4(){
+          var myobj4=document.getElementById("secon2");
+          myobj4.remove();
+      }
+      function detail1(){
+          document.getElementById("dita1").innerHTML = "Size/EU:40";
+          document.getElementById("dita11").innerHTML = "release:2018/2017";
+      }
+      function detail2(){
+          document.getElementById("dita2").innerHTML = "Size/EU:41";
+          document.getElementById("dita22").innerHTML = "Release:2019/2018";
+      }
+      function detail3(){
+          document.getElementById("dita3").innerHTML = "Size/EU:39";
+          document.getElementById("dita33").innerHTML = "Release:2020/2019";
+      }
+      function detail4(){
+          document.getElementById("dita4").innerHTML = "Size/EU:42";
+          document.getElementById("dita44").innerHTML = "Release:2019/2018";
+      }
+    
+       </script>
+
+    </body>
+</html>
